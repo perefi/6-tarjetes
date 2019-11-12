@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+    img{
+        width: 100%;    
+    }
+    body{
+        background: linear-gradient(38deg, mediumpurple, purple);   
+        }
+    .contenidor{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        justify-content: center;
+    }
+    .dissenyador{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 35em;
+        margin: 1em;
+        background: rgba(245,245,245,0.8);
+    }
+    .cont_img{
+        border-radius: 20px 20px 0 0;
+        height: 300px;
+        background: yellow;
+        
+    }
+    .cont_img img{
+        filter: grayscale(100%);
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    header{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: purple;
+        padding: 0.5em 1em;
+        margin:0 0 0.2em 0;
+        border-bottom: 1px solid purple;
+        }
+    h3 {
+        font-weight: 600;
+        font-style: normal;
+        }
+    h4 {
+        font-weight: 500;
+        font-style: italic;
+        }
+    .cont_txt{
+        display: flex;
+        margin: 1em 1em 0.5em 1em;
+        color: purple;
+        text-align: justify;
+        hyphens: auto;
+        font-size: 0.9em;
+        line-height: 1.4em;
+        flex-grow: 1;
+        }
+    .peu    
+        @media(max-width:600px){
+            body{font-size: 2px;
+            }
+            .contenidor{
+                flex-direction: column;
+            }
+            .dissenyador{
+                width: 30em;
+            }
+        }
+    .peu_dissenyador{
+            background: purple;
+            border-radius: 0 0 20px 20px;
+            color: white;
+            font-style: italic;
+            font-size: 0.9em;
+            padding: 1em 1em 0.5em 1em;
+        }
+    </style>
+</head>
+<body>
+   <div class="contenidor">
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/a3.jpg">
+            </div>
+            <header>
+                <h3>Lora Lamm</h3>
+                <h4>1928</h4>
+            </header>
+            <div class="cont_txt">
+                <p>Ilustradora y diseñadora gráfica suiza. Trabajó en los años 60 para Pirelli y La Rinascente , convirtiéndose, junto con Anita Klinz , en una de las pocas diseñadoras gráficas conocidas en Italia.
+                Después de los años formativos que pasó en la Kunstgewerbeschule en Zurich, comenzó su carrera trabajando para varias agencias. En 1953 se mudó a Milán. En este período de auge económico, hay muchos diseñadores suizos que se mudan a Italia para beneficiarse del clima intelectual y los hábitos progresivos que se afirman en ese momento histórico. Entre estos, cabe mencionar a Xanti Schawinsky, los mencionados Max Huber, Carlo Vivarelli, Walter Ballmer, Aldo Calabresi y Bruno Monguzzi.
+                Todos trabajaron para Studio Boggeri, fundado por Antonio Boggeri en 1933. Aquí Lora recibe pequeñas tareas, como estudios de empaque para Motta.</p>
+            </div>
+            <div class="peu_dissenyador">
+                <p>Cartelería Pirelli</p>
+            </div>
+        </div>
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/a1.jpg">
+            </div>
+            <header>
+                <h3>Wolfan Weingart</h3>
+                <h4>1941</h4>
+            </header>
+            <div class="cont_txt">
+                <p>Diseñador gráfico y tipógrafo internacionalmente conocido. Su trabajo se clasifica como tipografía suiza y se le acredita como "el padre" de la tipografía New Wave o Swiss Punk.
+                En abril de 1958 regresó a Alemania y comenzó sus estudios en la Academia Merz en Stuttgart, donde asistió a un programa de dos años en artes gráficas aplicadas. Aprendió tipografía, grabado en linóleo y grabado en madera.
+                Weingart luego completó un aprendizaje de composición tipográfica de tres años en composición de manos de metal caliente en Ruwe Printing. Allí entró en contacto con el diseñador de consultoría de la compañía, Karl-August Hanke, quien se convirtió en su mentor y lo alentó a estudiar en Suiza.</p>
+            </div>
+            <div class="peu_dissenyador">
+                <p>El poster suizo</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
